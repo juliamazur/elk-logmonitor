@@ -9,7 +9,7 @@ parse them, and eventually, group and analyze.
 
 In the simplest variant this stack consist of 3 elements:
 
-### 1) Logstash - component that parses incoming data and passes it on to another tool.
+### 1) Logstash - component that parses incoming data and passes it on to another tool
 
 Since logs can come in many different formats (mostly containing some jsons, timestamps, 
 plain text messages of upredicatable length in random order)
@@ -21,8 +21,7 @@ Logstash configuration consists of three main steps:
 - **log processing** (extracting and naming fields like timestamp, error level, source and so on),
 - **output definition** (you can define many at the same time - for instance, Elasticsearch and stdout)
 
-### 2) Elasticsearch - kind of NoSQL database, that stores proceesed logs as JSONs and indexes them, 
-### so you can aggregate end explore your data efficeiently.
+### 2) Elasticsearch - kind of NoSQL database, that stores proceesed logs as JSONs and indexes them, so you can aggregate end explore your data efficeiently.
 
 For basic usage, almost no work needs to be done - Elasticsearch will do the magic 
 withiout you even noticing.
